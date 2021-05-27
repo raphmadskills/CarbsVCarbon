@@ -1,0 +1,76 @@
+@font-face {
+  font-family: "Sucrose Bold Two";
+  src: url("../font/sucrose.woff2") format("woff2");
+}
+.sarnie__parallax__container {
+  width: 70%;     
+  margin: 0 auto;
+  background-color: white;
+  /* display: flex;
+  flex-wrap: wrap; */
+  
+} 
+
+.sarnie {
+  /* position: relative; */
+  width: 100%;
+  order: 8;
+  display: inline-block;
+  height: 450px;  
+  /* margin-bottom: 20px; */
+}
+
+#one, #two, #three, #four, #five, #six {
+  position: absolute;
+  background-repeat: no-repeat;
+  max-width: 300px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+#one img, #two img, #three img, #four img, #five img, #six img {
+  /*  This should make the images responsive, but it doesn't seem to be working :/ ?? */
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+}
+
+#one {
+  position: relative;
+  z-index: 1;  
+}
+
+#two {
+  position: relative;
+  z-index: 2;
+}  
+
+#three {
+  position: relative;
+  z-index: 3;
+}  
+
+#four {
+  position: relative;
+  z-index: 4;
+}
+
+#five {
+  position: relative;
+  z-index: 5;
+} 
+
+#six {
+  position: relative;
+  z-index: 6;
+}
+
+
+
+
+
+
+
+

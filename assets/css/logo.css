@@ -1,0 +1,55 @@
+/* || HEADER || */
+.header__container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 200px;
+}
+  
+/* .logo__container a {
+  max-height: 100px;
+} */
+
+.logo__container {
+  justify-content: center;
+  align-items: center;
+} 
+
+#logo {
+  height: 16%;
+  width: auto;
+  position: fixed;
+  top: 5%;
+  left: 4%; 
+}
+
+#logo:hover{
+  content: url(../imgs/logogrey.png);
+}
+
+  /* || mobile || */
+  @media only screen and (min-width: 361px) and (max-width: 1140px) {
+
+    .logo {
+      min-height: 80px;
+    }
+  }
+
+  /* || desktop || */
+  @media only screen and (min-width: 1143px) {
+    
+    .header__container, .main__container, .footer__container {
+        width: 70%;    
+        margin: 0 auto;
+    }
+    
+    .header__container {
+      width: 70%;
+      order: 1;
+      height: 100px;
+    }
+
+    .logo {
+      max-height: 18vw;
+      width: auto;
+    }
+  }

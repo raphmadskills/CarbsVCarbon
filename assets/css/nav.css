@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+  box-sizing: inherit;
+}
+
+
+.header__container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 200px;
+}
+
+/* ||||||||||| NAV BAR/BURGER MENU ||||||||||| */
+
+/* || Trying to get an overlay over page when the menu is open */
+
+/* body.open {
+  overflow: hidden;
+}
+
+body.open:before {
+  visibility: visible;
+  opacity: 1;
+}
+
+body:before {
+  content: "";
+  position: absolute;
+  background-color: #2196f3;
+  width: 100%;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.4s ease;
+} */
+
+/* || Burger icon position || */
+.burger {
+    position: fixed;
+    top: 5%;
+    right: 5%; 
+  }
+  
+  .burger__button {
+    display: block;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 0 auto;
+    transition: all 0.5s ease;
+    border: 4px solid black;
+    background: white;
+    right: 20px;
+    float: right;
+  }
+  
+  .burger__button.open {
+    border: 4px solid black;
+  }
+  
+  /* || Burger styling || */
+  .burger__button__icon {
+    display: inline-block;
+    position: absolute;
+    background: black;
+    margin: 0 auto;
+    width: 20px;
+    height: 4px;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transition: all 0.5s ease;
+    transform: translateY(-1px);
+  }
+  
+  .burger__button__icon:before,
+  .burger__button__icon:after {
+    content: "";
+    position: absolute;
+    margin: 0 auto;
+    background: black;
+    width: 20px;
+    height: 4px;
+    left: 0;
+    right: 0;
+    transition: all 0.5s ease;
+  }
+  
+  .burger__button.open:hover, .burger__button:hover {
+    border: 4px solid white;
+  }
+  
+  .burger__menu a:hover {
+   color: rgb(128, 128, 128);
+  }
+  
+  
+  /* || Spacing between to horizontal burger lines || */
+  .burger__button__icon:before {
+    bottom: 10px;
+  }
+  .burger__button__icon:after {
+    top: 10px;
+  }
+  
+  .burger__button.open .burger__button__icon {
+    background: transparent;
+  }
+  
+  /* || Burger to X rotation || */
+  .burger__button.open .burger__button__icon:before,
+  .burger__button.open .burger__button__icon:after {
+    transform-origin: 0 50%;
+    width: 28.28427125px;
+  }
+  
+  .burger__button.open .burger__button__icon:before {
+    transform: rotateZ(0.78539816rad);
+  }
+  
+  .burger__button.open .burger__button__icon:after {
+    transform: rotateZ(-0.78539816rad);
+  }
+  
+  .burger__menu {
+    list-style-type: none;
+    padding: 0 30px 0 0;
+    margin: 90px 0 0 0; 
+  }
+  
+  .burger__menu li {
+    display: block;
+    position:relative;
+    /* || Gaps in between the nav list items (home, sarnies, contact). || */
+    margin: 15px 0px;
+    visibility: hidden;
+    transition: all 0.5s ease;
+    transform: translateX(400px);
+  }
+  
+  .burger__menu a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    font-family: Arial, "san-serif";
+    font-weight: normal;
+    transition: all 0.4s ease;
+    text-align: right;
+  }
+  
+  /* || Distance the list items bounce to left or right depnding on which side the padding is on || */
+  .burger__menu li:hover {
+    padding-right: 30px;
+    text-align:right;
+    
+  }
+  
+  /* || Distance the menu slide to the right (positive %) or left (negative %) || */
+  .burger__button.open + .burger__menu li {
+    transform: translateX(0);
+    visibility: visible;
+  }
+  /* ||||||||||| END OF BURGER NAV MENU ||||||||||| */
+
+
+
+  /* || desktop || */
+  @media only screen and (min-width: 1143px) {
+
+    .header__container {
+        width: 70%;    
+        margin: 0 auto;
+    }
+  
+    .nav__bar {
+        width: 70%;
+        order: 1;
+        height: 100px;        
+    }
+  }

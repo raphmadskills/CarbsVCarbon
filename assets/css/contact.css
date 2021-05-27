@@ -1,0 +1,169 @@
+*,
+:before,
+:after {
+  box-sizing: inherit;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: 0.1px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+.block__heading {
+  font-size: 60px;
+}
+
+.block__description {
+  padding: 60px 0px 30px;
+}
+
+.block {  
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 480px;
+  color: grey;
+  margin: 0 auto;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.block__form__field {
+  width: 98%;
+  height: 50px;
+  border: 0;
+  border-radius: 8px;
+  outline: none;
+  margin-bottom: 16px;
+  padding-left: 16px;
+  background-color: rgb(230, 230, 230);
+  transition: all 0.3s ease;
+}
+
+.block__form__field:hover {
+  padding-left: 32px;
+}
+
+.block__form__button {
+  margin: 10px;
+  border-radius: 8px;
+  width: 30%;
+  height: 40px;
+  border-style: solid;
+  border-color: rgb(145, 145, 145);
+  border-width: 5px;
+  background-color: white;
+  color: rgb(136, 136, 136);
+  font-weight: bold;
+  letter-spacing: 0.8px;
+  padding: 5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;  
+  outline: none; 
+}
+
+.block__form__button:hover {
+  transform: translate(0, 3px);
+}
+/* 
+.button:active {
+  outline: none;
+} */
+
+
+/* button:focus {
+  outline: 0;
+} */
+
+
+.footer {
+  position: fixed; 
+  color: grey;
+  top: 85%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-decoration: none !important;  
+  /* text-align: center; */
+}
+
+/* |||| CONTACT |||| */
+
+#contact {
+  color: grey;
+  text-decoration: none;
+  margin: 100px;
+}
+
+#contact:hover {
+  color: rgb(119, 199, 0);
+}
+
+/* |||| SOCIAL MEDIA ICONS |||| */
+
+.ex1 {
+  position: relative;
+  align-items: center; 
+  text-align: center;  
+  margin: 10px;
+}
+
+.ex1 a {
+  text-decoration: none !important;
+  margin: 10px;
+  color: rgb(109, 109, 109);   
+}
+
+.ex1 i:hover {
+  /* A transition effect with variable speed from start to end. 
+  Transition cubic bezier function defines a Cubic Bezier curve, and can be used with animation-timing-function proprty and transition-timing-function property. 
+  Cubic-bezier(x1,y1,x2,y2)*/
+  transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  /* CSS Vendor Prefix: -webkit- = Google Chrome, Safari, & Android Browser */
+  -webkit-transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  /* CSS Vendor Prefix: -moz- = Firefox Browser */
+  -moz-transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  /* Other CSS Vendor Prefixes if you want to cover all bases: -o- = Opera; -ms- = Internet Explorer Edge; and -khtml- = Konqueror  */
+  
+  /* Transform scale of icon on hover */
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+}
+
+/* || Icon Colours || */
+/* Multiple colour options as I'm not settled on which is best  */
+
+.fa-twitter:hover {
+  color: #2691d9;
+  /* color: #266ed9; */
+}
+
+.fa-facebook:hover {
+  /* color: #266ed9; */
+  /* color: #264ad9; */
+  /* color: #2626d9; */ 
+  color: #4a26d9;
+}
+
+.fa-instagram:hover {
+  /* color: #d926d9; */
+  color: #b526d9;
+  /* color: #9126d9; */
+}
+
+.fa-youtube:hover {
+  /* color: #d92691; */
+  color: #d9266e;
+  /* color: #d9264a; */
+}
+
+
