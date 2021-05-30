@@ -12,6 +12,50 @@
 </head>
 <body>
     
+    <body>
+  <!-- Navigation bar starts here - it uses Navbar -->
+  <!--
+    In order to make navbar stick to the top I used sticky-top class.
+    More information about different positioning modes is available here - https://getbootstrap.com/docs/4.5/utilities/position/
+  -->
+  <head>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <!-- visually-hidden hides text on the screen but still keeps it understandable for search engines and such -->
+        <a class="navbar-brand" href="#">🐈 <span class="visually-hidden">(Welcome to the Cat Haven)</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Breeds
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#domesticated">Domesticated</a></li>
+                <li><a class="dropdown-item" href="#wild">Wild</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#imaginary">Imaginary 🌈</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="https://www.cats.org.uk/find-us" target="_blank">Adoption centers</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-info" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </head>
+  <!-- Navigation bar ends here -->
+    
     <header class="header__container">
         <div class="logo__container">   
           <a href="./new_index.html">
